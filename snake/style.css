@@ -1,0 +1,80 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  margin: 0%;
+
+  height: 1000px;
+  width: 100%;
+
+  background-color: rgb(51, 51, 51);
+}
+#container {
+  display: grid;
+  grid-template-columns: repeat(32, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+
+  grid-row: 2/10;
+  grid-column: 2/16;
+  background-color: rgb(53, 106, 51);
+
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+#snakeSegment {
+  background-color: rgb(15, 36, 14);
+  border: 1px rgb(53, 106, 51);
+  border-style: dotted;
+}
+
+.snakeSegmentTop {
+  margin-bottom: -10px;
+}
+.snakeSegmentLeft {
+  margin-right: -10px;
+}
+.snakeSegmentBottom {
+  margin-top: -10px;
+}
+.snakeSegmentRight {
+  margin-left: -10px;
+}
+
+#apple {
+  background-color: rgb(17, 40, 15);
+  border-radius: 2px;
+  margin: 10px;
+}
+
+#highscoreh1 {
+  grid-row: 1/3;
+  grid-column: 2/16;
+
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: rgb(4, 188, 4);
+}
+
+.resetForm {
+  grid-row: 4/7;
+  grid-column: 14/20;
+  background-color: rgb(13, 29, 11);
+  border-radius: 2px;
+
+  color: rgb(4, 188, 4);
+  display: grid;
+  grid-template-columns: repeat(32, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+
+  border: dotted rgb(53, 106, 51);
+  border-width: 0.07cm;
+}
+
+.resetForm button {
+  grid-row: 2/16;
+  grid-column: 2/32;
+  background-color: rgb(51, 112, 51);
+  border: dotted rgb(13, 29, 11);
+  border-width: 0.07cm;
+  font-size: 30px;
+}
